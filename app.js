@@ -14,6 +14,10 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname+'/index.html'));
 });
 
+app.get('/en', (req, res) => {
+    res.sendFile(path.join(__dirname+'/index-en.html'));
+});
+
 //run server
 app.listen(3000, () => {
     console.log(`Server is on 3000!`); 
